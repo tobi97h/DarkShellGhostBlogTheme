@@ -31,8 +31,22 @@
             <a id="gitea" class="icon" href="https://gitea.tobias-huebner.org" ></a>
             <a id="linkedin" class="icon" href="https://www.linkedin.com" ></a>
         </div>
-        <a href="https://tobias-huebner.org">tobias-huebner.org</a>
     </footer>
+    <div class="footer2">
+        <div class="container">
+            <div class="left">©<div id="year"></div> Tobias Hübner</div>
+            <div class="right">
+                <a class="homepage-link" href="https://tobias-huebner.org">tobias-huebner.org</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let year_dom = document.getElementById("year");
+        let year = new Date().getFullYear().toString();
+        year_dom.innerText = year;
+    </script>
+
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}

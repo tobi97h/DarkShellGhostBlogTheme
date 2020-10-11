@@ -6,11 +6,17 @@
         margin-top: 0;
         border-bottom: none;
         padding-bottom: 0;
+        padding-top: 30px;
         &:after {
             display: none;
         }
         &-header {
-            padding: 60px 0;
+            padding: 45px 0;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.75))), url("../schaltkreise.jpg");
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)), url("../schaltkreise.jpg");
+            background-size: cover;
+            background-position: 50% 70%;
+            background-repeat: no-repeat;
         }
     }
     &-content img {

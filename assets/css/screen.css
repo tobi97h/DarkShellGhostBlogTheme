@@ -358,6 +358,8 @@ button, input, select, textarea {
   color: #a0add5;
   background: #1c212b no-repeat center center;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.75))), url("../schaltkreise.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)), url("../schaltkreise.jpg");
 }
 
 #blog-logo {
@@ -422,7 +424,6 @@ button, input, select, textarea {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
   position: relative;
-  width: 80%;
   max-width: 900px;
   margin: 4rem auto;
   padding-bottom: 4rem;
@@ -513,12 +514,18 @@ button, input, select, textarea {
   margin-top: 0;
   border-bottom: none;
   padding-bottom: 0;
+  padding-top: 30px;
 }
 .post-template .post:after {
   display: none;
 }
 .post-template .post-header {
-  padding: 60px 0;
+  padding: 45px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.75))), url("../schaltkreise.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)), url("../schaltkreise.jpg");
+  background-size: cover;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 .post-content img {
   display: block;
@@ -622,42 +629,87 @@ button, input, select, textarea {
   color: #739a99;
 }
 .site-footer .icon {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 25px;
 }
 
 #wiki {
-  background-image: url("../icons/Wiki.svg");
+  background-image: url("../icons/wiki.svg");
+  transition: background-image 0.3s ease-in-out;
 }
 
 #wiki:hover {
-  background-image: url("../icons/Wiki_hover.svg");
-}
-
-#linkedin {
-  background-image: url("../icons/Linkedin.svg");
-}
-
-#linkedin:hover {
-  background-image: url("../icons/Linkedin_hover.svg");
+  background-image: url("../icons/wiki_hover.svg");
 }
 
 #gitea {
-  background-image: url("../icons/Gitea.svg");
+  background-image: url("../icons/gitea.svg");
+  transition: background-image 0.3s ease-in-out;
 }
 
 #gitea:hover {
-  background-image: url("../icons/Gitea_hover.svg");
+  background-image: url("../icons/gitea_hover.svg");
+}
+
+#linkedin {
+  background-image: url("../icons/linkedin.svg");
+  transition: background-image 0.3s ease-in-out;
+}
+
+#linkedin:hover {
+  background-image: url("../icons/linkedin_hover.svg");
 }
 
 .site-footer > .inner {
   display: flex;
   justify-content: center;
   max-width: 500px;
+}
+
+.footer2 {
+  width: 100%;
+  height: 30px;
+  background-color: #151617;
+}
+
+.footer2 .container {
+  max-width: 900px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
+
+.footer2 .container .left {
+  font-size: 13px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.footer2 .container .left #year {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.footer2 .container .right {
+  width: 50%;
+  height: 100%;
+  text-align: end;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer2 .container .right .homepage-link {
+  color: #B2B6BD !important;
+  text-decoration: none !important;
+}
+.footer2 .container .right .homepage-link:hover {
+  color: #739a99 !important;
+  text-decoration: none !important;
 }
 
 /*
