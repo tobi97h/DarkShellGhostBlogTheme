@@ -21,39 +21,16 @@
     }
     
     .icon {
-        width: 50px;
-        height: 50px;
-        background-size: cover;
         margin-left: auto;
         margin-right: auto;
+        transition: fill 0.3s ease; 
+        fill: #b2b6bd;
     }
-
+    
+    .icon:hover{
+        fill: #739a99;
+    }
 }
-
-#wiki{
-    background-image: url("../icons/wiki.svg");
-    transition: background-image 0.3s ease-in-out;
-}
-#wiki:hover{
-    background-image: url("../icons/wiki_hover.svg");
-}
-
-#gitea{
-    background-image: url("../icons/gitea.svg");
-    transition: background-image 0.3s ease-in-out;
-}
-#gitea:hover {
-    background-image: url("../icons/gitea_hover.svg");
-}
-
-#linkedin{
-    background-image: url("../icons/linkedin.svg");
-    transition: background-image 0.3s ease-in-out;
-}
-#linkedin:hover{
-    background-image: url("../icons/linkedin_hover.svg");
-}
-
 
 .site-footer > .inner {
     display: flex;
